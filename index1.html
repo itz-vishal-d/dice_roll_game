@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIG GAME</title>
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:inherit;
+            overflow-x:hidden;
+            overflow-y:hidden;
+            font-family:'Nunito',sans-serif;
+            font-size:30px;
+            font-weight: bolder;
+            
+        }
+        .container
+        {
+            
+            height:100%;
+            width:100%;
+            display:flex;
+            
+        }
+       
+        
+      
+
+         
+        .button
+        {
+            position:absolute;
+            z-index:2;
+            left:40%;
+            top:35%;
+            padding-top:2px;
+            width:300px;
+            border-radius:10rem;
+    
+        }
+        button:hover
+        {
+            color:#eee;
+            background-color:black;
+            
+        }
+        body{
+            animation-name:image;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+            transition:all;
+
+        }
+        @keyframes image
+        {
+            0%{
+                background-image:url(1.jpg);
+                position:absolute;
+                height:100vh;
+                width:100vw;
+                z-index:1;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                
+            }
+            25%
+            {
+                background-image:url(2.jpg);
+                position:absolute;
+                height:100vh;
+                width:100vw;
+                z-index:1;
+                background-size: cover;
+                background-repeat: no-repeat;
+             
+            }
+            50%{
+                background-image:url(3.jpg);
+                position:absolute;
+                height:100vh;
+                width:100vw;
+                z-index:1;
+                background-size: cover;
+                background-repeat: no-repeat;
+               
+            }
+            100%
+            {
+                background-image:url(4.jpg);
+                position:absolute;
+                height:100vh;
+                width:100vw;
+                z-index:1;
+                background-size: cover;
+                background-repeat: no-repeat;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+       
+        <a href="index.html" target="_self"><button class="button">PLAY NOW</button></a>
+        
+        
+    </div>
+    
+</body>
+</html>
